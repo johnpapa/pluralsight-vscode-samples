@@ -2,7 +2,6 @@
 
 ## Quick Start
 
-
 1. Install the global packages.
 
 	`npm install gulp -g`
@@ -19,7 +18,7 @@
 
 The source code is located in the `js` folder and written in ES6. We use `gulp` to transpile the ES6 to ES5 using Babel. The `gulp serve` task transpiles the code and puts it in the `dist` folder and then watches for more changes. If you change the source, it will transpile again. It also runs the superstatic server (you can run any server you want, but this is super simple) and launches the browser using browser-sync. When any files change, the browser will reload.
 
-When you launch a browser to [http://localhost:3474](http://localhost:3474) SystemJS kicks in and looks for `config.js` for its settings. We tell SystemJS to use Babel to transpile and that the baseURL for the code is in `/dist`. This is important so all import statements that were written assuming relative pathing in the `src` folder will still work. Finally, we tell SystemJS that import statements by default should assume they end with `.js`. This is accomplished by setting `defaultJSExtensions` to `true`. See below for an example.
+When you launch a browser to [http://localhost:3000](http://localhost:3000) SystemJS kicks in and looks for `config.js` for its settings. We tell SystemJS to use Babel to transpile and that the baseURL for the code is in `/dist`. This is important so all import statements that were written assuming relative pathing in the `src` folder will still work. Finally, we tell SystemJS that import statements by default should assume they end with `.js`. This is accomplished by setting `defaultJSExtensions` to `true`. See below for an example.
 
 ```javascript
 System.config({

@@ -15,7 +15,7 @@ gulp.task('watch', function() {
     gulp.watch(es6Path, ['babel']);
 });
 
-gulp.task('serve', ['watch'], function () {
+gulp.task('serve', ['babel', 'watch'], function () {
     var server = superstatic({
         clean_urls: true,
         routes: {

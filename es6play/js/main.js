@@ -1,4 +1,5 @@
-import {Car, Truck} from 'autos';
+import {Car} from 'car';
+import {Truck} from 'Truck';
 
 let car = new Car({
 	price: 30000, make: 'Chevy', model: 'Malibu',
