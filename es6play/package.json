@@ -1,0 +1,25 @@
+{
+  "name": "ES6",
+  "version": "1.0.0",
+  "description": "ES6 SystemJS and Modules",
+  "contributors": [
+    {
+      "name": "John Papa"
+    },
+    {
+      "name": "Dan Wahlin"
+    }
+  ],
+  "engines": {
+    "node": ">=0.10.28"
+  },
+  "dependencies": {
+    "systemjs": "^0.18.4"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.8.2",
+    "gulp": "^3.8.8",
+    "gulp-babel": "^5.1.0",
+    "superstatic": "^1.2.3"
+  }
+}

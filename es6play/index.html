@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ES6 JavaScript with Modules Using System.js</title>
+</head>
+<body>
+    <h3>Automobiles</h3>
+
+    <div id="output"></div>
+
+    <script src="/node_modules/systemjs/dist/system.js"></script>
+
+    <script src="config.js"></script>
+    <script>
+        System.import('./dist/main');
+    </script>
+</body>
+</html>
