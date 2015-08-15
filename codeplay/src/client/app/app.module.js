@@ -9,7 +9,4 @@
         'app.layout'
     ]);
 
-
-    ///hello
-
 })();
