@@ -17,6 +17,7 @@
     "systemjs": "^0.18.4"
   },
   "devDependencies": {
+    "babel": "^5.8.21",
     "browser-sync": "^2.8.2",
     "gulp": "^3.8.8",
     "gulp-babel": "^5.1.0",
