@@ -1,2 +1,18 @@
-/node_modules
-/jspm_packages
+build
+dist
+packages
+.tmp
+
+# Ignore Node & Bower & JSPM
+###################
+node_modules
+bower_components
+jspm_packages
+
+# Ignore Test reporters
+###################
+**/test/coverage
+report
+
+
+

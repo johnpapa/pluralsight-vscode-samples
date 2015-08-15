@@ -1,9 +1,18 @@
-# Dependency directory
-# https://docs.npmjs.com/misc/faq#should-i-check-my-node-modules-folder-into-git
+build
+dist
+packages
+.tmp
+
+# Ignore Node & Bower & JSPM
+###################
 node_modules
 bower_components
-build
+jspm_packages
+
+# Ignore Test reporters
+###################
+**/test/coverage
 report
 
-# other
-.tmp
+
+

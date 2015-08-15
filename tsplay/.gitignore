@@ -1,15 +1,18 @@
-packages
 build
+dist
+packages
 .tmp
 
-# Ignore Node & Bower
+# Ignore Node & Bower & JSPM
 ###################
 node_modules
 bower_components
+jspm_packages
 
 # Ignore Test reporters
 ###################
 **/test/coverage
 report
+
 
 
