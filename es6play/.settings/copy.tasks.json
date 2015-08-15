@@ -1,0 +1,17 @@
+{
+	"version": "0.1.0",
+	"command": "${workspaceRoot}/node_modules/.bin/babel",
+	"isShellCommand": true,
+	"tasks": [
+		{
+			"args": ["js", "--out-dir", "dist", "--source_maps"],
+			"taskName": "babel",
+			"isBuildCommand": true
+		},
+		{
+			"args": ["js", "--out-dir", "dist", "-w", "--source_maps"],
+			"taskName": "babel-watch",
+			"isBuildCommand": false
+		}
+	]
+}
