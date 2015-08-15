@@ -430,10 +430,13 @@ function orderSrc (src, order) {
  * @param  {Boolean} specRunner - server spec runner html
  */
 function serve(isDev, specRunner) {
-    var debugMode = '--debug';
+    // var debugMode =
+    var debugMode = args.debugBrk ? '--debug-brk' : args.debug ? '--debug' : '';
     var nodeOptions = getNodeOptions(isDev);
 
-    nodeOptions.nodeArgs = [debugMode + '=5858'];
+    if (debugMode) {
+        nodeOptions.nodeArgs = [debugMode + '=5858'];
+    }
 
     if (args.verbose) {
         console.log(nodeOptions);
