@@ -3,6 +3,14 @@
 	// List of configurations. Add new configurations or edit existing ones.
 	// ONLY "node" and "mono" are supported, change "type" to switch.
 	"configurations": [
+		// {
+		// 	"name": "node gulp debugger",
+		// 	"type": "node",
+		// 	"program": "./node_modules/gulp/bin/gulp.js",
+		// 	"stopOnEntry": true,
+		// 	"args": ["vet"],
+		// 	"runtimeArgs": ["--nolazy"]
+		// },
 		{
 			// Name of configuration; appears in the launch configuration drop down menu.
 			"name": "Launch src/server/app.js",
@@ -19,9 +27,11 @@
 			// Workspace relative or absolute path to the runtime executable to be used. Default is the runtime executable on the PATH.
 			"runtimeExecutable": null,
 			// Optional arguments passed to the runtime executable.
-			"runtimeArgs": ["--nolazy"],
+			"runtimeArgs": [
+				"--nolazy"
+			],
 			// Environment variables passed to the program.
-			"env": { },
+			"env": {},
 			// Use JavaScript source maps (if they exist).
 			"sourceMaps": false,
 			// If JavaScript source maps are enabled, the generated code is expected in this directory.
